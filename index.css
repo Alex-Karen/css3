@@ -1,0 +1,34 @@
+/* introduction demo */
+div {
+    border-radius: 5px;
+    /* 
+        -webkit-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        -moz-border-radius: 5px;
+    */
+}
+
+/* selector demo */
+.demo + span {
+    background: red;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+}
+.demo ~ p {
+    background: blue;
+}
+div:not(.test) {
+    width: 10px;
+    height: 10px;
+    background-color: red;
+}
+
+input:checked + span {
+    background-color: red;
+}
+input:checked + span::after {
+    content: '111';
+    color: #fff;
+}
