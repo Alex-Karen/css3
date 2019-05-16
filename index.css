@@ -1,12 +1,10 @@
 /* introduction demo */
 div {
     border-radius: 5px;
-    /* 
-        -webkit-border-radius: 5px;
+    /*  -webkit-border-radius: 5px;
         -ms-border-radius: 5px;
         -o-border-radius: 5px;
-        -moz-border-radius: 5px;
-    */
+        -moz-border-radius: 5px;*/
 }
 
 /* selector demo */
@@ -19,16 +17,54 @@ div {
 .demo ~ p {
     background: blue;
 }
-div:not(.test) {
+div {
     width: 10px;
     height: 10px;
+}
+div:not(.test) {
     background-color: red;
 }
-
+div:nth-of-type(2) {
+    background: yellow;
+}
+div:last-of-type{
+    background: blue;
+}
 input:checked + span {
     background-color: red;
 }
 input:checked + span::after {
     content: '111';
     color: #fff;
+}
+
+/* border background demo */
+.test {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: calc(50% - 50px);
+    top: calc(50% - 50px);
+    border-top-left-radius: 100px 100px;
+    border-radius: 10px 20px 30px 40px / 10px 20px 30px 40px;
+    border-radius: 50%;
+}
+.test {
+    border: 1px solid #000;
+    box-shadow: 5px 5px 5px red;
+    box-shadow: inset 0px 0px 50px #fff,
+                inset 10px 0px 80px #f0f,
+                inset -10px 0px 80px #f0f,
+                inset 10px 0px 300px #f0f,
+                inset -10px 0px 300px #f0f;
+}
+.test {
+    background-image: url(), url();
+    background-size: 100px 200px, 100px 200px;
+    background-repeat: no-repeat;
+    background-position: 0 0, 100px 0;
+    background: linear-gradient(0deg, #000 20%, #f00 50%, #090 80%);
+    background: linear-gradient(to top right, #000, #f00 50%, #090);
+    background: radial-gradient(circle closest-side, #f00, #ff0, #080);
+    background: radial-gradient(farthest-side at top right, #f00, #ff0, #080);
 }
