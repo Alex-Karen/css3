@@ -161,7 +161,29 @@ upgrade version css2 升级版本
 
 ## text
 
-## box
+    text-shadow 定义文字是否有阴影及模糊效果
+
+        none： 无阴影
+        <length>：第1个长度值用来设置对象的阴影水平偏移值。可以为负值
+        <length>：第2个长度值用来设置对象的阴影垂直偏移值。可以为负值
+        <length>：如果提供了第3个长度值则用来设置对象的阴影模糊值。不允许负值
+        <color>：设置对象的阴影的颜色。
+
+    work-break  定义元素内容文本的字间与字符间的换行行为
+
+## 多列
+
+    columns 设置或检索对象的列数和每列的宽度
+
+## box  盒模型
+
+    box-sizing: content-box  border-box;
+
+    overflow hidden scroll auto //overflow-x or -y
+
+    resize 设置或检索对象的区域是否允许用户缩放，调节元素尺寸大小 必须设置overflow
+
+    flex
 
 ## transition
 

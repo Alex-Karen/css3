@@ -1,10 +1,10 @@
 /* introduction demo */
 div {
     border-radius: 5px;
-    /*  -webkit-border-radius: 5px;
-        -ms-border-radius: 5px;
-        -o-border-radius: 5px;
-        -moz-border-radius: 5px;*/
+     -webkit-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    -moz-border-radius: 5px;
 }
 
 /* selector demo */
@@ -68,3 +68,20 @@ input:checked + span::after {
     background: radial-gradient(circle closest-side, #f00, #ff0, #080);
     background: radial-gradient(farthest-side at top right, #f00, #ff0, #080);
 }
+
+/* text demo */
+.text-demo {
+    font-size: 30px;
+    text-align: center;
+    color: #ddd;
+    width: 300px;
+    height: 100px;
+    background: yellow;
+    text-shadow: 1px 1px 0 rgba(255,255,255,1),1px 1px 2px rgba(0,85,0,.8);
+    text-shadow: 1px 1px #000, -1px -1px #fff;
+    text-shadow: -1px -1px #fff, 1px 1px #000;
+    transition: all 3s;
+}
+
+/* flex demo */
+
