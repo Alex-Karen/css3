@@ -183,8 +183,43 @@ upgrade version css2 升级版本
 
     resize 设置或检索对象的区域是否允许用户缩放，调节元素尺寸大小 必须设置overflow
 
-    flex
+### flex
 
-## transition
+    flex    复合属性。设置或检索弹性盒模型对象的子元素如何分配空间
+
+    flex-direction  该属性通过定义flex容器的主轴方向来决定felx子项在flex容器中的位置
+
+        row：主轴与行内轴方向作为默认的书写模式。即横向从左到右排列（左对齐）。
+        row-reverse：对齐方式与row相反。
+        column：主轴与块轴方向作为默认的书写模式。即纵向从上往下排列（顶对齐）。
+        column-reverse：对齐方式与column相反。
+
+    flex-wrap   控制flex容器是单行或者多行，同时横轴的方向决定了新行堆叠的方向 nowrap wrap wrap-reverse
+
+    justify-content 设置或检索弹性盒子元素在主轴（横轴）方向上的对齐方式
+
+        flex-start  flex-end center space-between space-around
+
+    align-items 定义flex子项在flex容器的当前行的侧轴（纵轴）方向上的对齐方式
+
+        flex-start  flex-end center baseline基于内容对齐   stretch如果没设置高度，撑开高度
+
+    align-content 多行元素居中
+
+        flex-start  flex-end center space-between space-around
+
+    order   设置弹性盒模型对象的子元素出现的顺序
+
+    align-self  定义flex子项单独在侧轴（纵轴）方向上的对齐方式
+
+        auto flex-start  flex-end center baseline   stretch
+
+    flex-grow 设置或检索弹性盒的扩展比率 子元素比
+
+    flex-basis 设置或检索弹性盒伸缩基准值   类似取代width
+
+    flex-shrink 设置或检索弹性盒的收缩比率 详细计算看文档   css.doyoe.com
+
+## transition 过渡动画
 
 ## animation
