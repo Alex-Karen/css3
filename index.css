@@ -114,3 +114,13 @@ input:checked + span::after {
 } */
 
 /* transitioin demo */
+.wrapper {
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: all 2s ease 1s;
+}
+.wrapper:hover {
+    width: 200px;
+    height: 200px;
+}
